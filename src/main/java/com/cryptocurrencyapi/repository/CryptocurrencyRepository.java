@@ -13,5 +13,4 @@ public interface CryptocurrencyRepository extends MongoRepository<Cryptocurrency
 
     List<Cryptocurrency> findAllByMarketSymbolOrderByPriceAsc(String marketSymbol,
                                                               Pageable pageable);
-
 }
